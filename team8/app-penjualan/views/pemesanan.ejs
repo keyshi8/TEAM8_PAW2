@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+
+    <% if (typeof successMessage !== 'undefined') { %>
+        <p style="color: green;"><%= successMessage %></p>
+    <% } %>
+
+    <form action="/pemesanan" method="POST">
+  <fieldset disabled>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Nama</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Nama">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Email</label>
+      <select id="disabledSelect" class="form-select"  placeholder="Email">
+      </select>
+    </div>
+     <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Pesanan</label>
+      <select id="disabledSelect" class="form-select"  placeholder="Pesanan">
+      </select>
+    </div>
+     <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Jumlah</label>
+      <select id="disabledSelect" class="form-select"  placeholder="jumlah">
+      </select>
+    </div>
+     <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Total</label>
+      <select id="disabledSelect" class="form-select"  placeholder="Total">
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+    </form>
+
+    <a href="/">Kembali ke Halaman Utama</a>
+</body>
+</html>
