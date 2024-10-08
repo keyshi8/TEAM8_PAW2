@@ -1,18 +1,19 @@
 {
   "name": "team8",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
-  "keywords" : [
+  "keywords": [
     "express"
   ],
-  
-  "author": "",
+  "author": "keyshi8",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "TEAM8_PAW2"
+  },
+  "description": ""
 }
